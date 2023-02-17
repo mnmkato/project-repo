@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 id="title="> freeCodeCamp Survey Form </h1>
@@ -16,19 +17,79 @@
         <input type="email" id="email" placeholder="Enter Your Email">
         <label for="number" id="number-label"> Age </label>
         <input type="number" min="10" max="60"  id="number" placeholder="Enter Your Age">
-        
-        <label for="dropdown" id ="dropdown-label">Which option best describes your current role?</label>label>
+        <hr>
+        <label for="dropdown" id ="dropdown-label">Which option best describes your current role?</label>
         <select id="dropdown" placeholder="Select Current Role">
             <option>definitely</option>
             <option>Maybe</option>
             <option>Not Sure</option>
         </select>
-        <input type="radio" id="Definitely" name="Recommendation" value="Definitely">
-        <label for = "Definitely" id="Definitely-label">definitely</label>
+        <label for="">Would you recommend freeCodeCamp to a friend?</label>
+        <div>
+            <input type="radio" id="Definitely" name="Recommendation" value="Definitely">
+            <label for = "Definitely" id="Definitely-label">definitely</label>
+        </div>
+        <div>
+            
         <input type="radio" id="Maybe" name="Recommendation" value="Maybe">
         <label for = "Maybe" id="Maybe-label">Maybe</label>
+        </div>
+        <div>
+            
         <input type="radio" id="Not Sure" name="Recommendation" value="Not Sure">
         <label for = "Not Sure" id="Not Sure-label">Not Sure</label>
+        </div>
+        <hr>
+        <label for="">What would you like to see improved? (Check all that apply)</label>
+        <div>
+            <input type="checkbox" name="improvements" value="FrontEnd" id="FrontEnd">
+        <label for="FrontEnd">Front-End Projects</label>
+        </div>
+        <div>
+            <input type="checkbox" name="improvements" value="BackEnd" id="BackEnd">
+        <label for="BackEnd">Back-End Projects</label>
+        </div>
+        <div>
+            <input type="checkbox" name="improvements" value="DataVisualisation" id="DataVisualisation">
+        <label for="DataVisualisation">Data Visualisation</label>
+        </div>
+        <div>
+             <input type="checkbox" name="improvements" value="Challenges" id="Challenges">
+        <label for="Challenges">Challenges</label>
+        </div>
+        <div>
+            <input type="checkbox" name="improvements" value="Open Source Community" id="Open Source Community">
+        <label for="Open Source Community">Open Source Community</label>
+        </div>
+       <div>
+         <input type="checkbox" name="improvements" value="Gitter help rooms" id="Gitter help rooms">
+        <label for="Gitter help rooms">Gitter help rooms</label>
+       </div>
+       <div>
+        <input type="checkbox" name="improvements" value="Videos" id="Videos">
+        <label for="Videos">Videos</label>
+       </div>
+        <div>
+            <input type="checkbox" name="improvements" value="City Meetups" id="City Meetups">
+        <label for="City Meetups">City Meetups</label>
+        </div>
+        <div>
+            <input type="checkbox" name="improvements" value="Wiki" id="Wiki">
+        <label for="Wiki">Wiki</label>
+        </div>
+        <div>
+              <input type="checkbox" name="improvements" value="Forum" id="Forum">
+        <label for="Forum">Forum</label>
+        </div>
+      <div>
+        <input type="checkbox" name="improvements" value="Additional Courses" id="Additional Courses">
+        <label for="Additional Courses">Additional Courses</label>
+      </div>
+        <hr>
+        <label for="AdditionalComments">Any comments or suggestions?</label>
+        <textarea name="" id="AdditionalComments" cols="30" rows="10"></textarea>
+        <hr>
+        <button id="submit">Submit</button>
     </form>
 </body>
 </html>
